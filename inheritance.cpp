@@ -78,7 +78,19 @@ darasFriend(string hisName, string name, int hours, string exercise):daraGymDay(
 HisName=hisName;
 }
 void whatTheyDo(int hours){
-cout<< endl << Name << " and his friend, " << HisName << " spend " << Hours << " hours working out in the gym." << endl;
+cout << endl << Name << " and his friend, " << HisName << " spend " << Hours << " hours working out in the gym." << endl;
+}
+};
+
+class darasTeacher:public daraGymDay{
+string TeacherName;
+
+public:
+darasTeacher(string teacherName, string name, int hours, string exercise):daraGymDay(name,exercise,hours){
+TeacherName=teacherName;
+}
+void teacherIs(){
+cout << endl << "Mr." << TeacherName << " used to be " << Name << " teacher." << endl;
 }
 };
 
@@ -101,4 +113,10 @@ daraEats.tellMeMore();
 
 darasFriend masoud=darasFriend("Masoud","Dara",7,"shoulders");
 masoud.whatTheyDo(7);
+
+darasTeacher MrJax=darasTeacher("Jax","Dara",7,"shoulders");
+MrJax.teacherIs();
+
+MrJax.daraDoes();
+MrJax.isInjured();
 }

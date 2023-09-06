@@ -10,7 +10,7 @@ In Python and C++, access specifiers are used to control the visibility and acce
 Public members can be accessed from anywhere, both within and outside the class.
 
 
-Python uses name mangling to create "pseudo-private" members with double underscores (__) as prefixes.
+Python uses name mangling to create **"pseudo-private"** members with double underscores (__) as prefixes.
 These members are not truly private but are meant to discourage direct access from outside the class.
 
 
@@ -25,7 +25,7 @@ Private members can only be accessed within the class itself.
 In C++, class members with the protected access specifier are accessible within the class and its derived (child) classes.
 Derived classes can access protected members of the base class.
 
-In summary, while Python uses name mangling to provide a form of "pseudo-private" members and doesn't strictly enforce protected members, C++ offers explicit access specifiers (public, private, and protected) for controlling the visibility and accessibility of class members, making it more robust in terms of encapsulation and access control. Developers should be aware of the differences in how these languages handle access specifiers when designing and using classes.
+In summary, while **Python uses name mangling to provide a form of "pseudo-private"** members and doesn't strictly enforce protected members, **C++ offers explicit access specifiers (public, private, and protected)** for controlling the visibility and accessibility of class members, making it more robust in terms of encapsulation and access control. Developers should be aware of the differences in how these languages handle access specifiers when designing and using classes.
 
 
 ======================================= **Virtualization** ======================================
@@ -51,9 +51,9 @@ In Python, all functions are considered "virtual" by default, and you don't need
 Python achieves polymorphism through duck typing, meaning that the object's behavior is determined by its attributes and methods, rather than by explicit type declarations.
 Any method can be overridden in derived classes without special keywords.
 
-Abstract Base Classes:
+**Abstract Base Classes:**
 
-Python has Abstract Base Classes (ABCs) from the abc module, which allow you to define abstract methods that must be implemented by concrete subclasses.
+Python has Abstract Base Classes, which allow you to define abstract methods that must be implemented by concrete subclasses.
 
 **Runtime Binding:**
 

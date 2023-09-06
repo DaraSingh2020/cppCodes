@@ -11,7 +11,7 @@ Public members can be accessed from anywhere, both within and outside the class.
 
 
 Python uses name mangling to create **"pseudo-private"** members with double underscores (__) as prefixes.
-These members are not truly private but are meant to discourage direct access from outside the class.
+These members are **not truly private** but are meant to discourage direct access from outside the class.
 
 
 Python doesn't have a strict mechanism for enforcing protected members.
